@@ -27,6 +27,7 @@ baizeApp::registerAll(Factory & f, ActionFactory & af, Syntax & s)
   Registry::registerActionsTo(af, {"baizeApp"});
 
   /* register custom execute flags, action syntax, etc. here */
+  s.registerActionSyntax("PolyStoredEnergyEBSDAction", "Kernels/PolyStoredEnergyEBSD");
 }
 
 void
