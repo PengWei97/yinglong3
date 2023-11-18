@@ -1,3 +1,4 @@
+*.inl
 .libs
 *.la
 *.lo
