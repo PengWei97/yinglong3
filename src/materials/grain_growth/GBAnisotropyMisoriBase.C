@@ -10,7 +10,7 @@
 #include "GBAnisotropyMisoriBase.h"
 #include "MooseMesh.h"
 
-registerMooseObject("qinglongApp", GBAnisotropyMisoriBase);
+registerMooseObject("baizeApp", GBAnisotropyMisoriBase);
 
 InputParameters
 GBAnisotropyMisoriBase::validParams()
