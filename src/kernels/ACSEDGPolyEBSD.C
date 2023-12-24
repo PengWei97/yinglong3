@@ -131,6 +131,8 @@ ACSEDGPolyEBSD::getGNDsFromEBSD(const unsigned int & grain_id)
     else
       rho_i = rho_init;
   }
+  else
+    rho_i = rho_init;
 
   return rho_i; 
 }

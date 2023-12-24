@@ -110,7 +110,7 @@ DeformedGrainEBSDMaterial::getGNDsFromEBSD(const unsigned int & grain_id)
   const Real rho_critical = _rho_critical * (_length_scale * _length_scale);
   const Real rho_end_l3 = _rho_end_l3 * (_length_scale * _length_scale);
   
-  if (_concurrent_recovery) // && (time_current > 50.0)
+  if (_concurrent_recovery)
   {
     if (rho_init >= rho_end_l3) // yellow grain
     {
@@ -128,6 +128,8 @@ DeformedGrainEBSDMaterial::getGNDsFromEBSD(const unsigned int & grain_id)
       _test_loc[_qp] = 1.0;
     }
   }
+  else
+    rho_i = rho_init;
 
   return rho_i;
 }
