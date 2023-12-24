@@ -42,7 +42,8 @@ mamba install git-flow
 ## Git flow流程开发
 ```bash
 git checkout develop
-git flow feature start add-BackstressCPFEM
+git flow feature start add-CPFPCoupledModel
+git flow feature finish add-CPFPCoupledModel
 ...
 git checkout develop
 git pull
